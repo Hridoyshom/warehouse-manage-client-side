@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 const header = () => {
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
-                <Container>
+            <Navbar bg="dark" variant="dark" sticky='top' >
+                <Container  >
 
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" >
                         <Nav.Link as={Link} to='/home' >Home</Nav.Link>
-                        <Nav.Link href="#features">Features</Nav.Link>
-                        <Nav.Link href="#pricing">Pricing</Nav.Link>
+                        <Nav.Link href="blogs">Blogs</Nav.Link>
+                        <Nav.Link href="items">Items</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
