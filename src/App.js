@@ -7,6 +7,7 @@ import Footer from './Footer';
 import NotFound from './NotFound';
 import Items from './Items';
 import Login from './Login';
+import Register from './Register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </Route>
         <Route path='/items' element={<Items></Items>} ></Route>
         <Route path='login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}  ></Route>
 
       </Routes>
