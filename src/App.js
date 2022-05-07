@@ -8,8 +8,10 @@ import NotFound from './NotFound';
 import Items from './Items';
 import Login from './Login';
 import Register from './Register';
+import RequireAuth from './RequireAuth';
 
 function App() {
+  console.log(process.env);
   return (
     <div >
 
@@ -18,7 +20,10 @@ function App() {
         <Route path='/' element={<Home></Home>}  >
 
         </Route>
-        <Route path='/items' element={<Items></Items>} ></Route>
+        <Route path='/items' element={<RequireAuth>
+          <Items></Items>
+        </RequireAuth>
+        } ></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}  ></Route>
