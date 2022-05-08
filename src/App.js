@@ -9,6 +9,8 @@ import Items from './Items';
 import Login from './Login';
 import Register from './Register';
 import RequireAuth from './RequireAuth';
+import Inventory from './Inventory';
+import Blogs from './Blogs';
 
 function App() {
   console.log(process.env);
@@ -24,6 +26,10 @@ function App() {
           <Items></Items>
         </RequireAuth>
         } ></Route>
+        <Route path='/inventory' element={<RequireAuth>
+          <Inventory></Inventory>
+        </RequireAuth>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
         <Route path='*' element={<NotFound></NotFound>}  ></Route>
