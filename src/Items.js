@@ -8,7 +8,7 @@ const Items = () => {
 
     return (
         <div className='px-4 pt-20 pb-24 mx-auto md:px-2' >
-            <p className=' text-center text-3xl font-bold text-grey ' >Customer Review</p>
+            <p className=' text-center text-3xl font-bold text-grey ' >ALL ITEMS</p>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center ' >
                 {items.map(item => (
                     <ItemCard key={item._id} item={item} />

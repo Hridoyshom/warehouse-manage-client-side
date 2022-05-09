@@ -11,6 +11,9 @@ import Register from './Register';
 import RequireAuth from './RequireAuth';
 import Inventory from './Inventory';
 import Blogs from './Blogs';
+import ManageInventory from './ManageInventory';
+import AddUser from './AddItem';
+import AddItem from './AddItem';
 
 function App() {
   console.log(process.env);
@@ -28,6 +31,12 @@ function App() {
         } ></Route>
         <Route path='/inventory' element={<RequireAuth>
           <Inventory></Inventory>
+        </RequireAuth>}></Route>
+        <Route path='/manage' element={<RequireAuth>
+          <ManageInventory></ManageInventory>
+        </RequireAuth>}></Route>
+        <Route path='/additem' element={<RequireAuth>
+          <AddItem></AddItem>
         </RequireAuth>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>

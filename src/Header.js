@@ -15,13 +15,15 @@ const Header = () => {
     return (
         <div>
             <Navbar bg="dark" variant="dark" sticky='top' >
-                <Container  >
+                <Container   >
 
                     <Nav className="me-auto" >
                         <Nav.Link as={Link} to='/' >Home</Nav.Link>
                         <Nav.Link href="blogs">Blogs</Nav.Link>
                         <Nav.Link href="items">Items</Nav.Link>
                         <Nav.Link href='inventory'>Inventory</Nav.Link>
+                        <Nav.Link href="manage">Manage Inventory</Nav.Link>
+                        <Nav.Link href='/additem'>Add User</Nav.Link>
 
 
                         {

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const ItemCard = ({ item }) => {
     const navigate = useNavigate();
     const navigateToInventory = _id => {
-        navigate(`/item/${_id}`)
+        navigate(`/inventory`)
     }
     return (
         <div className='shadow-lg rounded-2xl w-50px  bg-slate-200  p-4  mt-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ' >
