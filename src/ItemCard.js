@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Image } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const ItemCard = ({ item }) => {
+    const [loaditem, setLoaditem] = useState();
+
+
+
     const navigate = useNavigate();
     const navigateToInventory = _id => {
         navigate(`/inventory`)
