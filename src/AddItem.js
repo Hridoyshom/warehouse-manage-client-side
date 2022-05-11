@@ -13,7 +13,7 @@ const AddItem = () => {
 
         const items = { name, Img, Des, Price, Quantity, Supplier }
 
-        fetch('http://localhost:5000/items', {
+        fetch('https://fast-hollows-03179.herokuapp.com/items', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
